@@ -2,29 +2,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Md Shamim | Profile</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><style>
+<title>Md Shamim | Professional Profile</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+/* Animated Background */
 
 body{
-margin:0;
-font-family:Arial;
-background:#f4f6f9;
+height:100vh;
+background:linear-gradient(-45deg,#6a11cb,#2575fc,#ff512f,#dd2476);
+background-size:400% 400%;
+animation:bg 10s ease infinite;
+color:white;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
 }
 
 /* Header */
 
 header{
-background:#111;
-color:white;
-padding:15px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:15px 30px;
 }
 
 .logo{
-font-size:20px;
+font-size:22px;
 font-weight:bold;
 }
+
+/* 3 Dot Menu */
 
 .menu{
 font-size:24px;
@@ -34,93 +51,143 @@ cursor:pointer;
 .dropdown{
 display:none;
 position:absolute;
-right:20px;
+right:30px;
 top:60px;
-background:white;
-border-radius:8px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
+background:rgba(255,255,255,0.2);
+backdrop-filter:blur(10px);
+border-radius:10px;
 }
 
 .dropdown a{
 display:block;
 padding:10px 15px;
+color:white;
 text-decoration:none;
-color:#333;
 }
 
 .dropdown a:hover{
-background:#f0f0f0;
+background:rgba(255,255,255,0.2);
 }
 
 /* Hero */
 
 .hero{
 text-align:center;
-padding:40px 20px;
+padding:60px 20px;
 }
 
 .profile{
-width:140px;
-height:140px;
+width:160px;
+height:160px;
 border-radius:50%;
 border:5px solid white;
-box-shadow:0 8px 20px rgba(0,0,0,0.2);
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
 object-fit:cover;
+animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-10px)}
 }
 
 .hero h1{
 margin-top:15px;
+font-size:38px;
 }
 
-/* Social */
-
-.social{
-margin-top:10px;
+.hero p{
+opacity:0.9;
+margin:10px 0 20px;
 }
+
+/* Social Buttons */
 
 .social a{
 margin:0 10px;
-font-size:22px;
-color:#333;
+font-size:24px;
+color:white;
+transition:0.3s;
 }
 
-/* Sections */
+.social a:hover{
+transform:scale(1.3);
+}
+
+/* Section */
 
 section{
-max-width:800px;
+max-width:1000px;
 margin:auto;
-padding:20px;
+padding:40px 20px;
 }
 
+/* Glass Cards */
+
 .card{
-background:white;
-padding:20px;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(15px);
+border-radius:15px;
+padding:25px;
+margin-bottom:25px;
+box-shadow:0 10px 40px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* Skills */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
+margin-top:15px;
+}
+
+.skill{
+background:rgba(255,255,255,0.2);
+padding:15px;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-margin-bottom:20px;
+text-align:center;
+}
+
+/* Contact */
+
+.contact p{
+margin:10px 0;
 }
 
 /* Footer */
 
 footer{
-background:#111;
-color:white;
 text-align:center;
 padding:20px;
 margin-top:40px;
+opacity:0.8;
 }
 
 </style></head><body><header><div class="logo">Md Shamim</div><div class="menu" onclick="toggleMenu()">⋮</div><div class="dropdown" id="menuBox">
 <a href="#">Home</a>
 <a href="#about">About</a>
+<a href="#skills">Skills</a>
 <a href="#contact">Contact</a>
-</div></header><div class="hero"><img src="shamim.jpg" class="profile"><h1>Md Shamim</h1><p>Welcome to my personal website</p><div class="social"><a href="https://wa.me/917557096331"><i class="fab fa-whatsapp"></i></a>
+</div></header><div class="hero"><img src="shamim.jpg" class="profile"><h1>Md Shamim</h1><p>Multi Professional | Digital Creator</p><div class="social"><a href="https://wa.me/917557096331"><i class="fab fa-whatsapp"></i></a>
 <a href="#"><i class="fab fa-instagram"></i></a>
 <a href="#"><i class="fab fa-facebook"></i></a>
 
-</div></div><section id="about"><div class="card"><h2>About Me</h2><p>Hello 👋 Welcome to my personal website.  
-Here you can connect with me on social media.</p></div></section><section id="contact"><div class="card"><h2>Contact</h2><p><i class="fa fa-phone"></i> +91 75570 96331</p>
-<p><i class="fa fa-envelope"></i> example@email.com</p></div></section><footer>© 2026 Md Shamim
+</div></div><section id="about"><div class="card"><h2>About Me</h2><p>
+Hello 👋 Welcome to my modern personal website.  
+Here you can connect with me, explore my skills and follow my work online.
+</p></div></section><section id="skills"><div class="card"><h2>My Skills</h2><div class="skills"><div class="skill">Web Design</div>
+<div class="skill">Content Creator</div>
+<div class="skill">Digital Marketing</div>
+<div class="skill">Video Editing</div>
+<div class="skill">Social Media</div>
+<div class="skill">Online Business</div></div></div></section><section id="contact"><div class="card contact"><h2>Contact</h2><p><i class="fa fa-phone"></i> +91 75570 96331</p>
+<p><i class="fa fa-envelope"></i> example@email.com</p></div></section><footer>© 2026 Md Shamim | All Rights Reserved
 
 </footer><script>
 
