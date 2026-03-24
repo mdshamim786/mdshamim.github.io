@@ -2,7 +2,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Md Shamim | AI Smart Profile</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><style>
+<title>Md Shamim AI Website</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><style>
 
 *{
 margin:0;
@@ -11,16 +11,16 @@ box-sizing:border-box;
 font-family:Segoe UI;
 }
 
-/* Animated AI background */
+/* animated gradient */
 
 body{
-background:linear-gradient(-45deg,#667eea,#764ba2,#ff6a00,#ee0979);
+background:linear-gradient(-45deg,#6a11cb,#2575fc,#ff512f,#dd2476);
 background-size:400% 400%;
-animation:gradient 10s ease infinite;
+animation:bg 12s ease infinite;
 color:white;
 }
 
-@keyframes gradient{
+@keyframes bg{
 0%{background-position:0% 50%}
 50%{background-position:100% 50%}
 100%{background-position:0% 50%}
@@ -31,35 +31,13 @@ color:white;
 header{
 display:flex;
 justify-content:space-between;
-padding:20px 40px;
 align-items:center;
+padding:20px 40px;
 }
 
 .logo{
 font-size:22px;
 font-weight:bold;
-}
-
-.menu{
-font-size:24px;
-cursor:pointer;
-}
-
-.dropdown{
-display:none;
-position:absolute;
-top:60px;
-right:40px;
-background:rgba(255,255,255,0.2);
-backdrop-filter:blur(10px);
-border-radius:10px;
-}
-
-.dropdown a{
-display:block;
-padding:10px 15px;
-color:white;
-text-decoration:none;
 }
 
 /* hero */
@@ -74,63 +52,14 @@ width:160px;
 height:160px;
 border-radius:50%;
 border:5px solid white;
-box-shadow:0 15px 40px rgba(0,0,0,0.4);
+box-shadow:0 10px 40px rgba(0,0,0,0.4);
 object-fit:cover;
 }
 
 .hero h1{
+margin-top:15px;
 font-size:40px;
-margin-top:15px;
 }
-
-/* typing animation */
-
-.typing{
-border-right:3px solid white;
-white-space:nowrap;
-overflow:hidden;
-width:0;
-animation:typing 4s steps(30,end) forwards;
-}
-
-@keyframes typing{
-from{width:0}
-to{width:260px}
-}
-
-/* cards */
-
-section{
-max-width:1000px;
-margin:auto;
-padding:40px 20px;
-}
-
-.card{
-background:rgba(255,255,255,0.15);
-backdrop-filter:blur(15px);
-border-radius:15px;
-padding:25px;
-margin-bottom:25px;
-}
-
-/* skills */
-
-.skills{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
-gap:15px;
-margin-top:15px;
-}
-
-.skill{
-background:rgba(255,255,255,0.2);
-padding:15px;
-border-radius:10px;
-text-align:center;
-}
-
-/* social */
 
 .social{
 margin-top:15px;
@@ -142,7 +71,7 @@ font-size:24px;
 color:white;
 }
 
-/* AI Chat Button */
+/* chat button */
 
 .chat-btn{
 position:fixed;
@@ -161,13 +90,13 @@ cursor:pointer;
 box-shadow:0 10px 30px rgba(0,0,0,0.3);
 }
 
-/* chatbot */
+/* chatbox */
 
 .chatbox{
 position:fixed;
 bottom:100px;
 right:30px;
-width:300px;
+width:320px;
 background:white;
 color:black;
 border-radius:15px;
@@ -176,16 +105,16 @@ box-shadow:0 10px 40px rgba(0,0,0,0.4);
 }
 
 .chat-header{
-background:#667eea;
+background:#2575fc;
 color:white;
-padding:10px;
+padding:12px;
 border-radius:15px 15px 0 0;
 }
 
 .chat-body{
-padding:10px;
-height:200px;
+height:220px;
 overflow:auto;
+padding:10px;
 font-size:14px;
 }
 
@@ -202,53 +131,40 @@ outline:none;
 }
 
 .chat-input button{
-background:#667eea;
+background:#2575fc;
 color:white;
 border:none;
 padding:10px 15px;
 cursor:pointer;
 }
 
+/* footer */
+
 footer{
 text-align:center;
 padding:20px;
+margin-top:50px;
 opacity:0.8;
 }
 
-</style></head><body><header><div class="logo">Md Shamim</div><div class="menu" onclick="toggleMenu()">⋮</div><div class="dropdown" id="menuBox">
-<a href="#">Home</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
-</div></header><div class="hero"><img src="shamim.jpg" class="profile"><h1>Md Shamim</h1><p class="typing">Welcome to my website</p><div class="social"><a href="https://wa.me/917557096331"><i class="fab fa-whatsapp"></i></a>
+</style></head><body><header>
+<div class="logo">Md Shamim</div>
+</header><div class="hero"><img src="shamim.jpg" class="profile"><h1>Md Shamim</h1><p>AI Powered Website</p><div class="social">
+<a href="https://wa.me/917557096331"><i class="fab fa-whatsapp"></i></a>
 <a href="#"><i class="fab fa-instagram"></i></a>
 <a href="#"><i class="fab fa-facebook"></i></a>
-
-</div></div><section id="about"><div class="card"><h2>About Me</h2>👋 I am Md Shamim. This is my AI powered modern website where you can connect with me and explore my work.</p></div></section><section id="skills"><div class="card"><h2>My Skills</h2><div class="skills"><div class="skill">Web Design</div>
-<div class="skill">AI Tools</div>
-<div class="skill">Content Creator</div>
-<div class="skill">Digital Marketing</div>
-<div class="skill">Video Editing</div>
-<div class="skill">Online Business</div></div></div></section><section id="contact"><div class="card"><h2>Contact</h2><p>📞 +91 75570 96331</p>
-<p>✉ example@email.com</p></div></section><footer>© 2026 Md Shamim | AI Smart Website
-
-</footer><!-- AI CHAT --><div class="chat-btn" onclick="toggleChat()">
+</div></div><footer>
+© 2026 Md Shamim
+</footer><!-- CHAT BUTTON --><div class="chat-btn" onclick="toggleChat()">
 <i class="fa fa-robot"></i>
-</div><div class="chatbox" id="chatbox"><div class="chat-header">AI Assistant</div><div class="chat-body" id="chatBody">
-Hello 👋 Ask me about Md Shamim.
-</div><div class="chat-input"><input id="userInput" placeholder="Ask something..."><button onclick="sendMessage()">Send</button>
-
+</div><!-- CHAT BOX --><div class="chatbox" id="chatbox"><div class="chat-header">ChatGPT Assistant</div><div class="chat-body" id="chatBody">
+Hello 👋 Ask me anything.
+</div><div class="chat-input">
+<input id="userInput" placeholder="Type message...">
+<button onclick="sendMessage()">Send</button>
 </div></div><script>
 
-function toggleMenu(){
-
-let menu=document.getElementById("menuBox");
-
-menu.style.display=menu.style.display==="block"?"none":"block";
-
-}
-
-/* chatbot */
+const API_KEY="YOUR_OPENAI_API_KEY";
 
 function toggleChat(){
 
@@ -258,7 +174,7 @@ box.style.display=box.style.display==="block"?"none":"block";
 
 }
 
-function sendMessage(){
+async function sendMessage(){
 
 let input=document.getElementById("userInput").value;
 
@@ -266,14 +182,36 @@ let body=document.getElementById("chatBody");
 
 body.innerHTML+="<br><b>You:</b> "+input;
 
-let reply="I am AI assistant of Md Shamim.";
+document.getElementById("userInput").value="";
 
-if(input.toLowerCase().includes("contact")) reply="Phone: +91 75570 96331";
-if(input.toLowerCase().includes("instagram")) reply="Instagram link coming soon.";
+let response=await fetch("https://api.openai.com/v1/chat/completions",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json",
+"Authorization":"Bearer "+API_KEY
+},
+
+body:JSON.stringify({
+
+model:"gpt-4.1-mini",
+
+messages:[
+{role:"user",content:input}
+]
+
+})
+
+});
+
+let data=await response.json();
+
+let reply=data.choices[0].message.content;
 
 body.innerHTML+="<br><b>AI:</b> "+reply;
 
-document.getElementById("userInput").value="";
+body.scrollTop=body.scrollHeight;
 
 }
 
