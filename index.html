@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<title>Md Shamim</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
+<!DOCTYPE html><html lang="en">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Md Shamim</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><style>
 
 body{
 margin:0;
@@ -15,15 +8,16 @@ font-family:Arial;
 background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af,#515bd4);
 color:white;
 text-align:center;
+scroll-behavior:smooth;
 }
 
-/* 3 dot menu */
+/* menu */
 
 .menu{
 position:fixed;
 top:15px;
 left:15px;
-font-size:30px;
+font-size:32px;
 cursor:pointer;
 z-index:1000;
 }
@@ -31,7 +25,7 @@ z-index:1000;
 .dropdown{
 display:none;
 position:fixed;
-top:55px;
+top:60px;
 left:15px;
 background:white;
 color:black;
@@ -42,7 +36,7 @@ overflow:hidden;
 
 .dropdown a{
 display:block;
-padding:10px 20px;
+padding:12px 20px;
 text-decoration:none;
 color:black;
 }
@@ -51,25 +45,31 @@ color:black;
 background:#eee;
 }
 
-/* main */
+/* sections */
+
+section{
+padding:90px 20px;
+}
 
 .container{
-padding:40px;
+max-width:500px;
+margin:auto;
 }
 
 img{
-width:120px;
-height:120px;
+width:130px;
+height:130px;
 border-radius:50%;
 border:3px solid white;
 }
 
+/* buttons */
+
 .btn{
 display:block;
-width:220px;
+width:230px;
 margin:15px auto;
 padding:12px;
-text-align:center;
 color:white;
 text-decoration:none;
 border-radius:12px;
@@ -81,70 +81,57 @@ transition:0.3s;
 margin-right:10px;
 }
 
-/* Colors */
-
-.whatsapp{
-background:#25D366;
-}
-
-.instagram{
-background:#E1306C;
-}
-
-.facebook{
-background:#1877F2;
-}
-
-/* Animation */
+.whatsapp{background:#25D366;}
+.instagram{background:#E1306C;}
+.facebook{background:#1877F2;}
 
 .btn:hover{
 transform:scale(1.1);
 box-shadow:0 0 20px rgba(0,0,0,0.5);
 }
 
-.btn:active{
-transform:scale(0.95);
+/* contact */
+
+.contact-box{
+background:rgba(255,255,255,0.2);
+padding:20px;
+border-radius:15px;
+margin-top:20px;
 }
 
-</style>
-</head>
+/* typing text */
 
-<body>
+#typing{
+font-size:18px;
+margin-top:10px;
+}
 
-<!-- 3 dot -->
-<div class="menu" onclick="toggleMenu()">⋮</div>
+footer{
+margin-top:40px;
+font-size:14px;
+opacity:0.8;
+}
 
-<div class="dropdown" id="menu">
-<a href="https://wa.me/917557096331">WhatsApp</a>
-<a href="#">Instagram</a>
-<a href="#">Facebook</a>
-</div>
-
-<div class="container">
-
-<img src="shamim.jpg">
-
-<h1>Md Shamim</h1>
-
-<p>Welcome to my website</p>
-
-<a class="btn whatsapp" href="https://wa.me/917557096331">
+</style></head><body><!-- menu --><div class="menu" onclick="toggleMenu()">⋮</div><div class="dropdown" id="menu">
+<a href="#home"><i class="fa-solid fa-house"></i> Home</a>
+<a href="#about"><i class="fa-solid fa-user"></i> About</a>
+<a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a>
+<a href="#social"><i class="fa-solid fa-share-nodes"></i> Social</a>
+</div><!-- HOME --><section id="home"><div class="container"><img src="shamim.jpg"><h1>Md Shamim</h1><p id="typing"></p></div></section><!-- ABOUT --><section id="about"><div class="container"><h1>About Me</h1><p>Hello, I am Md Shamim.<br>
+Welcome to my personal portfolio website.</p></div></section><!-- CONTACT --><section id="contact"><div class="container"><h1>Contact</h1><div class="contact-box"><p><i class="fa-solid fa-phone"></i> 7557096331</p><p><i class="fa-solid fa-envelope"></i> your@email.com</p></div></div></section><!-- SOCIAL --><section id="social"><div class="container"><h1>Social Media</h1><a class="btn whatsapp" href="https://wa.me/917557096331">
 <i class="fa-brands fa-whatsapp"></i> WhatsApp
-</a>
-
-<a class="btn instagram" href="#">
+</a><a class="btn instagram" href="#">
 <i class="fa-brands fa-instagram"></i> Instagram
-</a>
-
-<a class="btn facebook" href="#">
+</a><a class="btn facebook" href="#">
 <i class="fa-brands fa-facebook"></i> Facebook
-</a>
+</a></div></section><footer>
+© 2026 Md Shamim
+</footer><script>
 
-</div>
-
-<script>
+/* menu toggle */
 
 function toggleMenu(){
+
 var menu=document.getElementById("menu");
 
 if(menu.style.display==="block"){
@@ -152,9 +139,25 @@ menu.style.display="none";
 }else{
 menu.style.display="block";
 }
+
 }
 
-</script>
+/* typing animation */
 
-</body>
+var text="Welcome to my personal website";
+var i=0;
+
+function typing(){
+
+if(i<text.length){
+document.getElementById("typing").innerHTML+=text.charAt(i);
+i++;
+setTimeout(typing,60);
+}
+
+}
+
+typing();
+
+</script></body>
 </html>
