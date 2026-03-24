@@ -1,22 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Md Shamim | Multi Professional Profile</title>
+<title>Md Shamim | Professional Profile</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><style>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
 
 body{
-font-family: Arial, sans-serif;
-margin:0;
-background:#f5f5f5;
+background:#f4f6f9;
 color:#333;
 }
 
-/* Header */
+/* HEADER */
 
 header{
 background:#111;
@@ -25,6 +25,8 @@ padding:15px 20px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+position:sticky;
+top:0;
 }
 
 .logo{
@@ -32,10 +34,10 @@ font-size:20px;
 font-weight:bold;
 }
 
-/* 3 dot menu */
+/* 3 DOT MENU */
 
 .menu{
-font-size:22px;
+font-size:24px;
 cursor:pointer;
 }
 
@@ -45,142 +47,117 @@ position:absolute;
 right:20px;
 top:60px;
 background:white;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
 border-radius:8px;
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
 overflow:hidden;
 }
 
 .dropdown a{
 display:block;
-padding:10px 15px;
+padding:12px 18px;
 text-decoration:none;
 color:#333;
+font-size:15px;
 }
 
 .dropdown a:hover{
-background:#f0f0f0;
+background:#f2f2f2;
 }
 
-/* Hero */
+/* HERO */
 
 .hero{
 text-align:center;
 padding:50px 20px;
 }
 
+.profile-photo{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+border:5px solid white;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+margin-bottom:15px;
+}
+
 .hero h1{
-font-size:36px;
+font-size:34px;
 margin-bottom:10px;
 }
 
-.social a{
-margin:0 10px;
-font-size:22px;
-color:#111;
+.hero p{
+color:#666;
+margin-bottom:20px;
 }
 
-/* Section */
+.social a{
+margin:0 12px;
+font-size:24px;
+color:#333;
+transition:0.3s;
+}
+
+.social a:hover{
+color:#25D366;
+}
+
+/* SECTION */
 
 section{
-max-width:800px;
+max-width:900px;
 margin:auto;
-padding:30px;
+padding:30px 20px;
 }
 
 .card{
 background:white;
-padding:20px;
+padding:25px;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
 margin-bottom:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 
-/* Contact */
+.card h2{
+margin-bottom:10px;
+}
+
+/* CONTACT */
 
 .contact p{
 margin:10px 0;
 font-size:16px;
 }
 
-/* Footer */
+/* FOOTER */
 
 footer{
-text-align:center;
-padding:20px;
 background:#111;
 color:white;
+text-align:center;
+padding:20px;
 margin-top:40px;
 }
 
-</style>
-</head>
-
-<body>
-
-<header>
-
-<div class="logo">Md Shamim</div>
-
-<div class="menu" onclick="toggleMenu()">⋮</div>
-
-<div class="dropdown" id="menuBox">
+</style></head><body><header><div class="logo">Md Shamim</div><div class="menu" onclick="toggleMenu()">⋮</div><div class="dropdown" id="menuBox">
 <a href="#">Home</a>
-<a href="#">About</a>
-<a href="#">Contact</a>
-</div>
-
-</header>
-
-<div class="hero">
-
-<h1>Md Shamim</h1>
-
-<div class="social">
-
-<a href="https://wa.me/917557096331"><i class="fab fa-whatsapp"></i></a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</div></header><div class="hero"><img src="https://i.imgur.com/2DhmtJ4.png" class="profile-photo"><h1>Md Shamim</h1><p>Welcome to my personal website</p><div class="social"><a href="https://wa.me/917557096331"><i class="fab fa-whatsapp"></i></a>
 
 <a href="#"><i class="fab fa-instagram"></i></a>
 
 <a href="#"><i class="fab fa-facebook"></i></a>
 
-</div>
+</div></div><section id="about"><div class="card"><h2>About Me</h2><p>
+Hello 👋 Welcome to my personal website.
+Here you can connect with me on social media and learn more about my work and activities.
+</p></div></section><section id="contact"><div class="card contact"><h2>Contact</h2><p><i class="fa fa-phone"></i> +91 75570 96331</p><p><i class="fa fa-envelope"></i> example@email.com</p></div></section><footer>© 2026 Md Shamim | All Rights Reserved
 
-</div>
-
-<section>
-
-<div class="card">
-
-<h2>About Me</h2>
-
-<p>
-Hello 👋 Welcome to my personal website.  
-Here you can connect with me on social media and learn more about my work.
-</p>
-
-</div>
-
-<div class="card contact">
-
-<h2>Contact</h2>
-
-<p><i class="fa fa-phone"></i> +91 75570 96331</p>
-
-<p><i class="fa fa-envelope"></i> example@email.com</p>
-
-</div>
-
-</section>
-
-<footer>
-
-© 2026 Md Shamim
-
-</footer>
-
-<script>
+</footer><script>
 
 function toggleMenu(){
+
 let menu=document.getElementById("menuBox");
 
 if(menu.style.display==="block"){
@@ -191,7 +168,5 @@ menu.style.display="block";
 
 }
 
-</script>
-
-</body>
+</script></body>
 </html>
