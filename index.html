@@ -29,16 +29,25 @@
             margin-top: 15px;
         }
         .btn {
-            display: block;
-            margin: 15px auto;
-            padding: 12px;
-            width: 200px;
-            background: #22c55e;
+            .btn {
+    display: block;
+    margin: 15px auto;
+    padding: 12px;
+    width: 200px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255,75,43,0.7);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255,75,43,1);
+}
             background-size: 400% 400%;
 animation: gradient 8s ease infinite;
-            color: white;
-            text-decoration: none;
-            border-radius: 25px;
         }
     </style>
 </head>
