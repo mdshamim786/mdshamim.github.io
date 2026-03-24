@@ -2,39 +2,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Md Shamim | Professional Profile</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
+<title>Md Shamim | Profile</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><style>
 
 body{
+margin:0;
+font-family:Arial;
 background:#f4f6f9;
-color:#333;
 }
 
-/* HEADER */
+/* Header */
 
 header{
 background:#111;
 color:white;
-padding:15px 20px;
+padding:15px;
 display:flex;
 justify-content:space-between;
 align-items:center;
-position:sticky;
-top:0;
 }
 
 .logo{
 font-size:20px;
 font-weight:bold;
 }
-
-/* 3 DOT MENU */
 
 .menu{
 font-size:24px;
@@ -48,88 +38,69 @@ right:20px;
 top:60px;
 background:white;
 border-radius:8px;
-box-shadow:0 5px 20px rgba(0,0,0,0.2);
-overflow:hidden;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
 }
 
 .dropdown a{
 display:block;
-padding:12px 18px;
+padding:10px 15px;
 text-decoration:none;
 color:#333;
-font-size:15px;
 }
 
 .dropdown a:hover{
-background:#f2f2f2;
+background:#f0f0f0;
 }
 
-/* HERO */
+/* Hero */
 
 .hero{
 text-align:center;
-padding:50px 20px;
+padding:40px 20px;
 }
 
-.profile-photo{
-width:150px;
-height:150px;
+.profile{
+width:140px;
+height:140px;
 border-radius:50%;
-object-fit:cover;
 border:5px solid white;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
-margin-bottom:15px;
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+object-fit:cover;
 }
 
 .hero h1{
-font-size:34px;
-margin-bottom:10px;
+margin-top:15px;
 }
 
-.hero p{
-color:#666;
-margin-bottom:20px;
+/* Social */
+
+.social{
+margin-top:10px;
 }
 
 .social a{
-margin:0 12px;
-font-size:24px;
+margin:0 10px;
+font-size:22px;
 color:#333;
-transition:0.3s;
 }
 
-.social a:hover{
-color:#25D366;
-}
-
-/* SECTION */
+/* Sections */
 
 section{
-max-width:900px;
+max-width:800px;
 margin:auto;
-padding:30px 20px;
+padding:20px;
 }
 
 .card{
 background:white;
-padding:25px;
+padding:20px;
 border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 margin-bottom:20px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
 }
 
-.card h2{
-margin-bottom:10px;
-}
-
-/* CONTACT */
-
-.contact p{
-margin:10px 0;
-font-size:16px;
-}
-
-/* FOOTER */
+/* Footer */
 
 footer{
 background:#111;
@@ -143,22 +114,19 @@ margin-top:40px;
 <a href="#">Home</a>
 <a href="#about">About</a>
 <a href="#contact">Contact</a>
-</div></header><div class="hero"><img src="https://i.imgur.com/2DhmtJ4.png" class="profile-photo"><h1>Md Shamim</h1><p>Welcome to my personal website</p><div class="social"><a href="https://wa.me/917557096331"><i class="fab fa-whatsapp"></i></a>
-
+</div></header><div class="hero"><img src="shamim.jpg" class="profile"><h1>Md Shamim</h1><p>Welcome to my personal website</p><div class="social"><a href="https://wa.me/917557096331"><i class="fab fa-whatsapp"></i></a>
 <a href="#"><i class="fab fa-instagram"></i></a>
-
 <a href="#"><i class="fab fa-facebook"></i></a>
 
-</div></div><section id="about"><div class="card"><h2>About Me</h2><p>
-Hello 👋 Welcome to my personal website.
-Here you can connect with me on social media and learn more about my work and activities.
-</p></div></section><section id="contact"><div class="card contact"><h2>Contact</h2><p><i class="fa fa-phone"></i> +91 75570 96331</p><p><i class="fa fa-envelope"></i> example@email.com</p></div></section><footer>© 2026 Md Shamim | All Rights Reserved
+</div></div><section id="about"><div class="card"><h2>About Me</h2><p>Hello 👋 Welcome to my personal website.  
+Here you can connect with me on social media.</p></div></section><section id="contact"><div class="card"><h2>Contact</h2><p><i class="fa fa-phone"></i> +91 75570 96331</p>
+<p><i class="fa fa-envelope"></i> example@email.com</p></div></section><footer>© 2026 Md Shamim
 
 </footer><script>
 
 function toggleMenu(){
 
-let menu=document.getElementById("menuBox");
+var menu=document.getElementById("menuBox");
 
 if(menu.style.display==="block"){
 menu.style.display="none";
